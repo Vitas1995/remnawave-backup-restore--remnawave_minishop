@@ -222,7 +222,7 @@ configure_bot_backup() {
                 case "$bot_choice" in
                     1) BOT_BACKUP_SELECTED="Бот от Иисуса"; bot_folder="remnawave-telegram-shop" ;;
                     2) BOT_BACKUP_SELECTED="Приватный бот от Иисуса"; bot_folder="rwp-shop" ;;
-                    3) BOT_BACKUP_SELECTED="Бот от Мачки"; bot_folder="remnawave-tg-shop" ;;
+                    3) BOT_BACKUP_SELECTED="Бот от Мачки"; bot_folder="remnawave-minishop" ;;
                     4) BOT_BACKUP_SELECTED="Бот от Snoups"; bot_folder="remnashop" ;;
                     0) continue ;;
                     *) print_message "ERROR" "$(t invalid_input)"; sleep 1; continue ;;
@@ -323,7 +323,7 @@ get_bot_params() {
             echo "rwp_shop_db|rwp_shop_db_data|rwp-shop|db"
             ;;
         "Бот от Мачки")
-            echo "remnawave-tg-shop-db|remnawave-tg-shop-db-data|remnawave-tg-shop|remnawave-tg-shop-db"
+            echo "remnawave-minishop-db|remnawave-minishop-db-data|remnawave-tg-shop|remnawave-minishop-db"
             ;;
         "Бот от Snoups")
             echo "remnashop-db|remnashop-db-data|remnashop|remnashop-db"
